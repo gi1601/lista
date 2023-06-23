@@ -1,8 +1,9 @@
 lista = []
 while True:
     num = int(input("Adicione um número: "))
-    if num in lista:
-        lista.pop()
+    for i in lista:
+        if num in lista:
+            lista.remove(i)
     lista.append(num)
     sair = str(input("Quer sair?"))
     if sair == "s":
